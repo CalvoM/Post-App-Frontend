@@ -1,0 +1,36 @@
+@font-face{
+    font-family:Caveat;
+    src:url('./fonts/Caveat/Caveat-Regular.ttf');
+}
+@font-face{
+    font-family: Courgette;
+    src:url('./fonts/Courgette/Courgette-Regular.ttf');
+}
+@font-face{
+    font-family: Lobster;
+    src:url('./fonts/Lobster/Lobster-Regular.ttf');
+}
+@font-face{
+    font-family: Luckiest_Guy;
+    src:url('./fonts/Luckiest_Guy/LuckiestGuy-Regular.ttf');
+}
+@font-face{
+    font-family: Mansalva;
+    src:url('./fonts/Mansalva/Mansalva-Regular.ttf');
+}
+@font-face{
+    font-family: Pacifico;
+    src:url('./fonts/Pacifico/Pacifico-Regular.ttf');
+}
+@font-face{
+    font-family: Marker;
+    src:url('./fonts/Permanent_Marker/PermanentMarker-Regular.ttf');
+}
+@font-face{
+    font-family:Shadows;
+    src:url('./fonts/Shadows_Into_Light/ShadowsIntoLight-Regular.ttf');
+}
+@font-face{
+    font-family: Yesteryear;
+    src:url('./fonts/Yesteryear/Yesteryear-Regular.ttf');
+}
