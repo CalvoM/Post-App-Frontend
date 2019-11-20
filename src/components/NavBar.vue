@@ -2,7 +2,7 @@
     <div id="Navbar">
         <header id="title">Post it!</header>
         <input type="text" placeholder="Search for posts" id="searchInput">
-        <button id="addPostBtn">Add a post</button>
+        <button id="addPostBtn" @click="$emit('addPost')">Add a post</button>
     </div>
 </template>
 

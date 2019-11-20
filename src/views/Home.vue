@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <PostModal></PostModal>
-    <NavBar></NavBar>
+    <PostModal v-show="showPostModal" @closePostModal="closeModal"></PostModal>
+    <NavBar @addPost="showPostModal=!showPostModal"></NavBar>
   </div>
 </template>
 
@@ -13,6 +13,20 @@ export default {
   components:{
     NavBar,
     PostModal,
+  },
+  data(){
+    return{
+      showPostModal:false,
+      Post:{
+        title:"",
+        body:""
+      }
+    }
+  },
+  methods:{
+    closeModal(){
+
+    }
   }
 }
 </script>

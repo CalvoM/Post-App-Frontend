@@ -3,7 +3,7 @@
         <div id="postContainer">
         <div id="titleSection">
             <input type="text" placeholder="Enter the title" id="title">
-            <button id="closeBtn">x</button>
+            <button id="closeBtn" @click="$emit('closePostModal')">x</button>
         </div>
         <div id="bodySection">
             <textarea name="body" id="body" cols="30" rows="10" placeholder="Enter body of your post"></textarea>
@@ -34,6 +34,7 @@ export default {
     margin:auto;
     margin-top: 5em;
     background-color: rgba(darken($primaryColor,15%),0.4);
+
 }
 #titleSection{
     padding:0.5em;
