@@ -50,16 +50,17 @@ export default {
     background:lighten($primaryColor,20%); 
     padding: 0.2em 0;
     margin:0.5em auto;
+    letter-spacing: 0.2em;
 }
 #post-title,#post-body{
     border-bottom: 0.1px solid lighten($primaryTextColor,30%);
     padding-bottom: 0.5em;
+    font-family:Luckiest_Guy;  
 }
 #titleSpan{
     font-size: 110%;
     color:darken($primaryTextColor,30%);
-    letter-spacing: 0.2em;
-    font-family:Courgette;  
+    letter-spacing: 0.2em;  
 }
 #timeSpan{
     font-size: 90%;
@@ -73,9 +74,11 @@ export default {
     width: 3em;
 }
 #upvotes{
+    font-family:Luckiest_Guy;  
     background-color: #9f0;
 }
 #downvotes{
     background-color: rgb(247, 86, 17);
+    font-family:Luckiest_Guy;  
 }
 </style>
