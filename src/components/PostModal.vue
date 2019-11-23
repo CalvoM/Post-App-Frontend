@@ -29,12 +29,18 @@ export default {
     },
     methods:{
         addPostToDb(){
-            axios.post(cors_url+db_url+'add/posts/',this.Post)
+            if(this.Post.title=="" || this.Post.body==""){
+                alert("There is an empty field!");
+            }
+            else{
+                 axios.post(cors_url+db_url+'add/posts/',this.Post)
                  .then(resp =>{
                      console.log(resp)
                      this.Post.title = "";
                      this.Post.body="";
                  })
+            }
+           
         }
     }
 }
