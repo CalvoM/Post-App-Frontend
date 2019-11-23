@@ -2,21 +2,41 @@
     <div id="post-modal">
         <div id="postContainer">
         <div id="titleSection">
-            <input type="text" placeholder="Enter the title" id="title">
+            <input type="text" placeholder="Enter the title" id="title" v-model="Post.title">
             <button id="closeBtn" @click="$emit('closePostModal')">x</button>
         </div>
         <div id="bodySection">
-            <textarea name="body" id="body" cols="30" rows="10" placeholder="Enter body of your post"></textarea>
+            <textarea name="body" id="body" cols="30" rows="10" placeholder="Enter body of your post" v-model="Post.body"></textarea>
         </div>
         <div id="submitSection">
-            <button id="submitBtn">SUBMIT POST</button>
+            <button id="submitBtn" @click="addPostToDb">SUBMIT POST</button>
         </div>
         </div>
     </div>
 </template>
 <script>
+import {cors_url,db_url} from "../config";
+import axios from 'axios';
 export default {
-    name:"post-modal"
+    name:"post-modal",
+    data(){
+        return{
+            Post:{
+                title:"",
+                body:""
+            }
+        }
+    },
+    methods:{
+        addPostToDb(){
+            axios.post(cors_url+db_url+'add/posts/',this.Post)
+                 .then(resp =>{
+                     console.log(resp)
+                     this.Post.title = "";
+                     this.Post.body="";
+                 })
+        }
+    }
 }
 </script>
 <style lang="scss" scoped>
