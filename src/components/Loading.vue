@@ -29,5 +29,7 @@ export default {
     border:none;
     background-color: $primaryColor;
     color:$primaryTextColor;
+    font-family: Courgette;
+    letter-spacing: 0.5em;
 }
 </style>

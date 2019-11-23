@@ -3,7 +3,7 @@
     <PostModal v-show="showPostModal" @closePostModal="closeModal"></PostModal>
     <NavBar @addPost="showPostModal=!showPostModal"></NavBar>
     <Loading v-if="!posts.length"></Loading>
-    <Post v-else v-for="(post,index) in posts" :key="index" :title="post.title" :body="post.body" :time="customizeTime(post.posted_at)" :upvotes="post.upvotes" :downvotes="post.downvotes" > {{post}} </Post>
+    <Post v-else v-for="(post,index) in posts" :key="index" :title="post.title" :body="post.body" :time="customizeTime(post.posted_at)" :upvotes="post.upvotes" :downvotes="post.downvotes" :id="post.id"> {{post}} </Post>
   </div>
 </template>
 
