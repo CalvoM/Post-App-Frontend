@@ -44,7 +44,7 @@ export default {
 #post-modal{
     z-index:100;
     position: fixed;
-    background-color: rgba(darken($primaryColor,40%),0.4);
+    background-color: rgba(darken($primaryColor,40%),0.8);
     width:100%;
     height:100%;
 }
@@ -53,7 +53,7 @@ export default {
     width:40%;
     margin:auto;
     margin-top: 5em;
-    background-color: rgba(darken($primaryColor,15%),0.4);
+    background-color: rgba(darken($primaryColor,20%),1.4);
 
 }
 #titleSection{
@@ -70,7 +70,7 @@ input,textarea,button{
     border:1px solid $primaryColor;
     width:60%;
     padding:0.5em;
-    color:darken($primaryTextColor,16%);
+    color:darken($primaryTextColor,24%);
 }
 #closeBtn{
     border:1px solid $primaryColor;
@@ -78,7 +78,8 @@ input,textarea,button{
     margin-left:20%;
     width:40px;
     height:40px;
-    color:$primaryTextColor;
+    font-family: Marker;
+    color:darken($primaryTextColor,24%);
     border-radius: 50%;
 }
 
@@ -92,15 +93,16 @@ input,textarea,button{
     margin:auto;
     border:1px solid $primaryColor;
     font-size: 110%;
-    color:darken($primaryTextColor,16%);
+    color:darken($primaryTextColor,24%);
     resize: none;
 }
 
 #submitBtn{
     margin:0.5em auto;
     padding:0.5em;
-    border:1px solid $primaryColor;
-    color:$primaryTextColor;
+    border:1px solid $primaryTextColor;
+    color:$primaryColor;
+    background-color: $primaryTextColor;
 }
 #body:focus,#title:focus,#closeBtn:focus,#submitBtn:focus{
     box-shadow: 1px 1px 4px 2px $primaryColor;
